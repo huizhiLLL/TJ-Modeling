@@ -1,0 +1,1269 @@
+{
+  "list_pages_visited": 50,
+  "articles_discovered": 500,
+  "target_articles_matched": 177,
+  "target_articles_after_dedup": 177,
+  "articles_fetched_successfully": 177,
+  "articles_parsed_before_duplicate_filter": 177,
+  "articles_parsed_final_unique": 175,
+  "failed_count": 0,
+  "failed_urls": [],
+  "missing_core_field_urls": [],
+  "duplicate_week_urls": [
+    "https://www.agri.cn/sj/jcyj/202502/t20250226_8714895.htm",
+    "https://www.agri.cn/sj/jcyj/202401/t20240105_8599056.htm"
+  ],
+  "time_coverage": {
+    "start": "2022-08-02",
+    "end": "2026-04-08"
+  },
+  "core_extraction_rate": {
+    "all_core_fields": 1.0,
+    "hog_price": {
+      "count": 175,
+      "rate": 1.0
+    },
+    "corn_price": {
+      "count": 175,
+      "rate": 1.0
+    },
+    "soymeal_price": {
+      "count": 175,
+      "rate": 1.0
+    }
+  },
+  "gaps_over_14_days": [
+    {
+      "from": "2022-09-20",
+      "to": "2022-10-11",
+      "gap_days": 21,
+      "from_title": "9月份第3周畜产品和饲料集贸市场价格情况",
+      "to_title": "10月份第1周畜产品和饲料集贸市场价格情况"
+    },
+    {
+      "from": "2023-01-17",
+      "to": "2023-02-07",
+      "gap_days": 21,
+      "from_title": "1月份第2周畜产品和饲料集贸市场价格情况",
+      "to_title": "2月份第1周畜产品和饲料集贸市场价格情况"
+    },
+    {
+      "from": "2025-01-27",
+      "to": "2025-02-11",
+      "gap_days": 15,
+      "from_title": "1月第4周畜产品和饲料集贸市场价格情况",
+      "to_title": "2月第1周畜产品和饲料集贸市场价格情况"
+    },
+    {
+      "from": "2025-04-01",
+      "to": "2025-04-22",
+      "gap_days": 21,
+      "from_title": "3月第4周畜产品和饲料集贸市场价格情况",
+      "to_title": "4月第3周畜产品和饲料集贸市场价格情况"
+    },
+    {
+      "from": "2026-02-10",
+      "to": "2026-02-25",
+      "gap_days": 15,
+      "from_title": "2月第1周畜产品和饲料集贸市场价格情况",
+      "to_title": "2月第2周畜产品和饲料集贸市场价格情况"
+    }
+  ],
+  "manual_review_articles": [
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202603/t20260311_8818065.htm",
+      "title": "3月第1周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2026-03-10",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202603/t20260304_8816352.htm",
+      "title": "2月第4周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2026-03-03",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202603/t20260304_8816351.htm",
+      "title": "2月第3周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2026-02-27",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202602/t20260227_8814889.htm",
+      "title": "2月第2周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2026-02-25",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202602/t20260211_8811925.htm",
+      "title": "2月第1周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2026-02-10",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202602/t20260204_8809558.htm",
+      "title": "1月第5周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2026-02-03",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202601/t20260127_8806877.htm",
+      "title": "1月第4周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2026-01-27",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202601/t20260116_8803356.htm",
+      "title": "1月第2周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2026-01-13",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202601/t20260108_8801340.htm",
+      "title": "1月第1周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2026-01-06",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202512/t20251225_8797450.htm",
+      "title": "12月第3周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2025-12-23",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202512/t20251217_8795355.htm",
+      "title": "12月第2周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2025-12-16",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202512/t20251211_8793371.htm",
+      "title": "12月第1周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2025-12-09",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202512/t20251203_8791213.htm",
+      "title": "11月第4周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2025-12-02",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202511/t20251126_8789245.htm",
+      "title": "11月第3周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2025-11-25",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202511/t20251119_8787426.htm",
+      "title": "11月第2周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2025-11-18",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202511/t20251111_8785034.htm",
+      "title": "11月第1周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2025-11-11",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202511/t20251106_8783689.htm",
+      "title": "10月第4周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2025-11-04",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202510/t20251030_8781691.htm",
+      "title": "10月第3周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2025-10-28",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202510/t20251021_8778429.htm",
+      "title": "10月第2周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2025-10-21",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202510/t20251014_8776940.htm",
+      "title": "10月第1周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2025-10-14",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202510/t20251011_8775311.htm",
+      "title": "9月第5周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2025-10-10",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202509/t20250930_8772647.htm",
+      "title": "9月第4周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2025-09-30",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202509/t20250925_8770944.htm",
+      "title": "9月第3周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2025-09-23",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202509/t20250916_8767865.htm",
+      "title": "9月第2周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2025-09-16",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202509/t20250902_8764200.htm",
+      "title": "8月第4周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2025-09-02",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202508/t20250827_8762261.htm",
+      "title": "8月第3周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2025-08-26",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202508/t20250827_8762260.htm",
+      "title": "8月第2周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2025-08-19",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202508/t20250805_8756100.htm",
+      "title": "7月第5周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2025-08-05",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202507/t20250731_8754752.htm",
+      "title": "7月第4周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2025-07-29",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202507/t20250722_8751589.htm",
+      "title": "7月第3周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2025-07-22",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202507/t20250715_8749444.htm",
+      "title": "7月第2周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2025-07-15",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202507/t20250710_8748178.htm",
+      "title": "7月第1周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2025-07-08",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202507/t20250703_8746263.htm",
+      "title": "6月第4周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2025-07-02",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202506/t20250625_8744076.htm",
+      "title": "6月第3周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2025-06-25",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202506/t20250617_8741994.htm",
+      "title": "6月第2周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2025-06-17",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202506/t20250610_8739911.htm",
+      "title": "6月第1周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2025-06-10",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202506/t20250604_8738509.htm",
+      "title": "5月第4周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2025-06-03",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202505/t20250528_8736862.htm",
+      "title": "5月第3周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2025-05-27",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202505/t20250528_8736861.htm",
+      "title": "5月第2周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2025-05-20",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202505/t20250514_8733449.htm",
+      "title": "5月第1周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2025-05-13",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202505/t20250508_8731631.htm",
+      "title": "4月第5周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2025-05-07",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202504/t20250429_8729932.htm",
+      "title": "4月第4周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2025-04-29",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202504/t20250423_8727988.htm",
+      "title": "4月第3周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2025-04-22",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202504/t20250402_8723398.htm",
+      "title": "3月第4周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2025-04-01",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202503/t20250325_8721142.htm",
+      "title": "3月第3周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2025-03-25",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202503/t20250320_8720085.htm",
+      "title": "3月第2周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2025-03-18",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202503/t20250312_8717854.htm",
+      "title": "3月第1周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2025-03-11",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202503/t20250306_8716826.htm",
+      "title": "2月第4周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2025-03-04",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202502/t20250226_8714927.htm",
+      "title": "2月第3周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2025-02-25",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing; kept_latest_duplicate_week"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202502/t20250219_8713303.htm",
+      "title": "2月第2周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2025-02-18",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202502/t20250213_8711889.htm",
+      "title": "2月第1周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2025-02-11",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202501/t20250127_8708786.htm",
+      "title": "1月第4周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2025-01-27",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202501/t20250116_8706559.htm",
+      "title": "1月第2周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2025-01-14",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202501/t20250109_8704675.htm",
+      "title": "1月第1周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2025-01-07",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202501/t20250102_8703076.htm",
+      "title": "12月第4周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2024-12-31",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing; kept_latest_duplicate_week"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202412/t20241226_8701825.htm",
+      "title": "12月第3周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2024-12-24",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202412/t20241218_8699866.htm",
+      "title": "12月第2周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2024-12-17",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202412/t20241211_8698026.htm",
+      "title": "12月第1周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2024-12-10",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202412/t20241204_8695616.htm",
+      "title": "11月第4周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2024-12-03",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202411/t20241127_8693315.htm",
+      "title": "11月第3周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2024-11-26",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202411/t20241120_8690916.htm",
+      "title": "11月第2周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2024-11-19",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202411/t20241114_8689260.htm",
+      "title": "11月第1周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2024-11-12",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202411/t20241106_8686361.htm",
+      "title": "10月第5周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2024-11-05",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202410/t20241030_8684156.htm",
+      "title": "10月第4周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2024-10-29",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202410/t20241023_8681827.htm",
+      "title": "10月第3周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2024-10-22",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202410/t20241016_8679608.htm",
+      "title": "10月第2周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2024-10-15",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202410/t20241011_8677865.htm",
+      "title": "10月第1周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2024-10-09",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202409/t20240930_8675574.htm",
+      "title": "9月第4周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2024-09-30",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202409/t20240924_8673885.htm",
+      "title": "9月第3周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2024-09-24",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202409/t20240919_8672422.htm",
+      "title": "9月第2周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2024-09-18",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202409/t20240911_8670255.htm",
+      "title": "9月第1周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2024-09-10",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202409/t20240904_8668071.htm",
+      "title": "8月第5周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2024-09-03",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202408/t20240828_8665753.htm",
+      "title": "8月第4周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2024-08-27",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202408/t20240821_8663839.htm",
+      "title": "8月第3周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2024-08-20",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202408/t20240821_8663838.htm",
+      "title": "8月第2周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2024-08-13",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202408/t20240807_8659647.htm",
+      "title": "8月第1周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2024-08-06",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202408/t20240801_8658068.htm",
+      "title": "7月第4周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2024-07-30",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202407/t20240723_8654986.htm",
+      "title": "7月第3周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2024-07-23",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202407/t20240717_8653443.htm",
+      "title": "7月第2周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2024-07-16",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202407/t20240710_8651161.htm",
+      "title": "7月第1周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2024-07-09",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202407/t20240703_8648754.htm",
+      "title": "6月第4周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2024-07-02",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202406/t20240627_8647024.htm",
+      "title": "6月第3周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2024-06-25",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202406/t20240619_8644095.htm",
+      "title": "6月第2周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2024-06-18",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202406/t20240613_8642340.htm",
+      "title": "6月第1周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2024-06-12",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202406/t20240605_8640088.htm",
+      "title": "5月第5周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2024-06-04",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202405/t20240528_8637240.htm",
+      "title": "5月第4周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2024-05-28",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202405/t20240522_8635353.htm",
+      "title": "5月第3周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2024-05-21",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202405/t20240514_8633112.htm",
+      "title": "5月第2周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2024-05-14",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202405/t20240509_8631607.htm",
+      "title": "5月第1周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2024-05-07",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202404/t20240430_8629852.htm",
+      "title": "4月第4周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2024-04-30",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202404/t20240424_8627776.htm",
+      "title": "4月第3周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2024-04-23",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202404/t20240417_8625697.htm",
+      "title": "4月第2周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2024-04-16",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202404/t20240410_8623603.htm",
+      "title": "4月第1周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2024-04-09",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202404/t20240403_8621782.htm",
+      "title": "3月第4周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2024-04-02",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202403/t20240327_8619879.htm",
+      "title": "3月第3周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2024-03-26",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202403/t20240319_8617524.htm",
+      "title": "3月第2周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2024-03-19",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202403/t20240305_8613413.htm",
+      "title": "2月第5周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2024-03-05",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202402/t20240228_8611833.htm",
+      "title": "2月第4周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2024-02-27",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202402/t20240228_8611834.htm",
+      "title": "2月第3周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2024-02-20",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202402/t20240206_8607885.htm",
+      "title": "2月第1周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2024-02-06",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202401/t20240130_8605537.htm",
+      "title": "1月第4周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2024-01-30",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202401/t20240124_8604108.htm",
+      "title": "1月第3周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2024-01-23",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202401/t20240116_8601864.htm",
+      "title": "1月第2周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2024-01-16",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202401/t20240110_8600338.htm",
+      "title": "1月第1周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2024-01-09",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202312/t20231231_8595475.htm",
+      "title": "12月第3周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2023-12-26",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202312/t20231231_8595470.htm",
+      "title": "12月第2周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2023-12-19",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202312/t20231231_8595468.htm",
+      "title": "12月第1周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2023-12-12",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202311/t20231130_8132170.htm",
+      "title": "11月第4周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2023-11-28",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202311/t20231130_8132166.htm",
+      "title": "11月第3周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2023-11-21",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202311/t20231130_8132163.htm",
+      "title": "11月第2周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2023-11-14",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202311/t20231130_8132162.htm",
+      "title": "11月第1周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2023-11-07",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202311/t20231130_8132160.htm",
+      "title": "10月第4周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2023-10-31",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202311/t20231130_8132156.htm",
+      "title": "10月第3周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2023-10-24",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202311/t20231130_8132152.htm",
+      "title": "10月第2周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2023-10-17",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202311/t20231130_8132148.htm",
+      "title": "10月第1周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2023-10-10",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202311/t20231130_8132147.htm",
+      "title": "9月份第3周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2023-09-26",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202311/t20231130_8132140.htm",
+      "title": "9月份第2周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2023-09-19",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202311/t20231130_8132139.htm",
+      "title": "9月份第1周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2023-09-12",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202311/t20231130_8132135.htm",
+      "title": "8月份第5周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2023-09-05",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202311/t20231130_8132134.htm",
+      "title": "8月份第4周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2023-08-29",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202311/t20231130_8132131.htm",
+      "title": "8月份第3周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2023-08-22",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202311/t20231130_8132126.htm",
+      "title": "8月份第2周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2023-08-14",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202311/t20231130_8132124.htm",
+      "title": "8月份第1周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2023-08-08",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202311/t20231130_8132123.htm",
+      "title": "7月份第4周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2023-08-01",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202311/t20231130_8132119.htm",
+      "title": "7月份第3周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2023-07-25",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202311/t20231130_8132116.htm",
+      "title": "7月份第2周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2023-07-18",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202311/t20231130_8132113.htm",
+      "title": "7月份第1周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2023-07-11",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202311/t20231130_8132112.htm",
+      "title": "6月份第5周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2023-07-04",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202311/t20231130_8132108.htm",
+      "title": "6月份第4周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2023-06-27",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202311/t20231130_8132106.htm",
+      "title": "6月份第3周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2023-06-20",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202311/t20231130_8132099.htm",
+      "title": "6月份第2周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2023-06-13",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202311/t20231130_8132097.htm",
+      "title": "6月份第1周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2023-06-06",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202311/t20231130_8132096.htm",
+      "title": "5月份第4周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2023-05-30",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202311/t20231130_8132089.htm",
+      "title": "5月份第3周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2023-05-23",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202311/t20231130_8132087.htm",
+      "title": "5月份第2周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2023-05-16",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202311/t20231130_8132086.htm",
+      "title": "5月份第1周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2023-05-09",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202311/t20231130_8132081.htm",
+      "title": "4月份第3周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2023-04-25",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202311/t20231130_8132076.htm",
+      "title": "4月份第2周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2023-04-18",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202311/t20231130_8132070.htm",
+      "title": "3月份第5周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2023-04-04",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202311/t20231130_8132069.htm",
+      "title": "3月份第4周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2023-03-28",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202311/t20231130_8132065.htm",
+      "title": "3月份第3周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2023-03-21",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202311/t20231130_8132060.htm",
+      "title": "3月份第2周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2023-03-14",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202311/t20231130_8132058.htm",
+      "title": "3月份第1周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2023-03-07",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202311/t20231130_8132057.htm",
+      "title": "2月份第4周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2023-03-01",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202311/t20231130_8132053.htm",
+      "title": "2月份第3周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2023-02-21",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202311/t20231130_8132050.htm",
+      "title": "2月份第2周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2023-02-14",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202311/t20231130_8132049.htm",
+      "title": "2月份第1周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2023-02-07",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202311/t20231130_8132041.htm",
+      "title": "1月份第2周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2023-01-17",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202311/t20231130_8132039.htm",
+      "title": "1月份第1周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2023-01-10",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202311/t20231130_8132037.htm",
+      "title": "12月份第5周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2023-01-04",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202311/t20231130_8132035.htm",
+      "title": "12月份第4周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2022-12-27",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202311/t20231130_8132033.htm",
+      "title": "12月份第3周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2022-12-20",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202311/t20231130_8132028.htm",
+      "title": "12月份第2周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2022-12-13",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202311/t20231130_8132027.htm",
+      "title": "12月份第1周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2022-12-06",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202311/t20231130_8132025.htm",
+      "title": "11月份第4周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2022-11-29",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202311/t20231130_8132021.htm",
+      "title": "11月份第3周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2022-11-21",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202311/t20231130_8132018.htm",
+      "title": "11月份第2周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2022-11-15",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202311/t20231130_8132015.htm",
+      "title": "11月份第1周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2022-11-08",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202311/t20231130_8132013.htm",
+      "title": "10月份第4周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2022-11-01",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202311/t20231130_8132011.htm",
+      "title": "10月份第3周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2022-10-25",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202311/t20231130_8132006.htm",
+      "title": "10月份第2周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2022-10-18",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202311/t20231130_8132005.htm",
+      "title": "10月份第1周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2022-10-11",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202311/t20231130_8131998.htm",
+      "title": "9月份第3周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2022-09-20",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202311/t20231130_8131996.htm",
+      "title": "9月份第2周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2022-09-14",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202311/t20231130_8131995.htm",
+      "title": "9月份第1周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2022-09-06",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202311/t20231130_8131992.htm",
+      "title": "8月份第4周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2022-08-30",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202311/t20231130_8131990.htm",
+      "title": "8月份第3周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2022-08-23",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202311/t20231130_8131987.htm",
+      "title": "8月份第2周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2022-08-16",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202311/t20231130_8131984.htm",
+      "title": "8月份第1周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2022-08-09",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    },
+    {
+      "article_url": "https://www.agri.cn/sj/jcyj/202311/t20231130_8131983.htm",
+      "title": "7月份第4周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2022-08-02",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    }
+  ],
+  "run_started_at": "2026-04-14T09:01:28",
+  "run_finished_at": "2026-04-14T09:03:31",
+  "log_path": "data/logs/agri_weekly_crawl_20260414_090128.log",
+  "article_index_csv": "data/raw/agri_weekly_articles/index_pages/article_index.csv",
+  "parsed_prices_csv": "data/interim/agri_weekly_parsed/agri_weekly_prices.csv"
+}

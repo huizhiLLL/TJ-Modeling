@@ -2,4 +2,7 @@ tmp/
 test/
 ref/
 .vscode/
-AGNETS.md
+AGENTS.md
+raw/
+logs/
+*.pyc
