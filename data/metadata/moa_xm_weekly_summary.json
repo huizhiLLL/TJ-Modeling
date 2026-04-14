@@ -1,0 +1,29 @@
+{
+  "list_pages_visited": 25,
+  "articles_discovered": 181,
+  "target_articles_matched": 181,
+  "articles_processed": 181,
+  "failed_urls": [],
+  "time_coverage": {
+    "start": "2011-01-14",
+    "end": "2015-06-23"
+  },
+  "live_hog_price_non_null_count": 181,
+  "corn_price_non_null_count": 181,
+  "soymeal_price_non_null_count": 181,
+  "manual_review_rows": [
+    {
+      "article_url": "https://www.moa.gov.cn/gk/jcyj/xm/201108/t20110831_2195714.htm",
+      "title": "8月份第4周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2011-08-31",
+      "validation_flag": "ok",
+      "validation_notes": "collect_date_missing"
+    }
+  ],
+  "run_started_at": "2026-04-14T10:32:41",
+  "run_finished_at": "2026-04-14T10:38:09",
+  "article_index_csv": "data/raw/moa_xm_weekly_articles/index_pages/article_index.csv",
+  "long_csv": "data/interim/moa_xm_weekly_parsed/moa_xm_weekly_indicators_long.csv",
+  "wide_csv": "data/interim/moa_xm_weekly_parsed/moa_xm_weekly_prices.csv",
+  "log_path": "data/logs/moa_xm_weekly_crawl_20260414_103241.log"
+}
