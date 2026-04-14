@@ -1,0 +1,87 @@
+{
+  "page_specs_total": 60,
+  "pages_successfully_processed": 60,
+  "failed_pages": [],
+  "missing_pages": [],
+  "time_coverage": {
+    "start": "2021Q1",
+    "end": "2026-02"
+  },
+  "long_table_row_count": 1507,
+  "core_table_row_count": 60,
+  "breeding_sow_inventory_non_null_count": 51,
+  "hog_exfarm_price_non_null_count": 60,
+  "breeding_sow_inventory_non_null_rate": 0.85,
+  "hog_exfarm_price_non_null_rate": 1.0,
+  "manual_review_rows": [
+    {
+      "period_key": "2021Q1",
+      "report_period": "2021Q1",
+      "page_url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2021yjd/",
+      "validation_flag": "sow_inventory_missing",
+      "validation_notes": "能繁母猪存栏未提供绝对值:2021年3月末定点监测能繁母猪存栏"
+    },
+    {
+      "period_key": "2021-04",
+      "report_period": "2021-04",
+      "page_url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/202104/",
+      "validation_flag": "sow_inventory_missing",
+      "validation_notes": "能繁母猪存栏未提供绝对值:2021年4月末定点监测能繁母猪存栏"
+    },
+    {
+      "period_key": "2021-05",
+      "report_period": "2021-05",
+      "page_url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/202105/",
+      "validation_flag": "sow_inventory_missing",
+      "validation_notes": "能繁母猪存栏未提供绝对值:2021年5月末定点监测能繁母猪存栏变化"
+    },
+    {
+      "period_key": "2021-06",
+      "report_period": "2021-06",
+      "page_url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/202106/",
+      "validation_flag": "sow_inventory_missing",
+      "validation_notes": "能繁母猪存栏未提供绝对值:2021年6月末定点监测能繁母猪存栏变化"
+    },
+    {
+      "period_key": "2021-07",
+      "report_period": "2021-07",
+      "page_url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/202107/",
+      "validation_flag": "sow_inventory_missing",
+      "validation_notes": "能繁母猪存栏未提供绝对值:2021年7月末定点监测能繁母猪存栏变化"
+    },
+    {
+      "period_key": "2021-08",
+      "report_period": "2021-08",
+      "page_url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/202108/",
+      "validation_flag": "sow_inventory_missing",
+      "validation_notes": "能繁母猪存栏未提供绝对值:2021年8月末定点监测能繁母猪存栏变化"
+    },
+    {
+      "period_key": "2025-11",
+      "report_period": "2025-11",
+      "page_url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2025/202511/",
+      "validation_flag": "sow_inventory_missing",
+      "validation_notes": "能繁母猪存栏缺失"
+    },
+    {
+      "period_key": "2026-01",
+      "report_period": "2026-01",
+      "page_url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2026/202601/",
+      "validation_flag": "sow_inventory_missing",
+      "validation_notes": "能繁母猪存栏缺失"
+    },
+    {
+      "period_key": "2026-02",
+      "report_period": "2026-02",
+      "page_url": "https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2026/202602/",
+      "validation_flag": "sow_inventory_missing",
+      "validation_notes": "能繁母猪存栏缺失"
+    }
+  ],
+  "run_started_at": "2026-04-14T09:59:44",
+  "run_finished_at": "2026-04-14T10:01:52",
+  "page_index_csv": "data/raw/moa_hog_monthly/index_pages/page_index.csv",
+  "long_csv": "data/interim/moa_hog_monthly_parsed/moa_hog_indicators_long.csv",
+  "core_csv": "data/interim/moa_hog_monthly_parsed/moa_hog_core_metrics.csv",
+  "log_path": "data/logs/moa_hog_monthly_crawl_20260414_095944.log"
+}

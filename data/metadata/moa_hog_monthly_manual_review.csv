@@ -1,0 +1,10 @@
+﻿period_key,report_period,page_url,validation_flag,validation_notes
+2021Q1,2021Q1,https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2021yjd/,sow_inventory_missing,能繁母猪存栏未提供绝对值:2021年3月末定点监测能繁母猪存栏
+2021-04,2021-04,https://www.moa.gov.cn/ztzl/szcpxx/jdsj/202104/,sow_inventory_missing,能繁母猪存栏未提供绝对值:2021年4月末定点监测能繁母猪存栏
+2021-05,2021-05,https://www.moa.gov.cn/ztzl/szcpxx/jdsj/202105/,sow_inventory_missing,能繁母猪存栏未提供绝对值:2021年5月末定点监测能繁母猪存栏变化
+2021-06,2021-06,https://www.moa.gov.cn/ztzl/szcpxx/jdsj/202106/,sow_inventory_missing,能繁母猪存栏未提供绝对值:2021年6月末定点监测能繁母猪存栏变化
+2021-07,2021-07,https://www.moa.gov.cn/ztzl/szcpxx/jdsj/202107/,sow_inventory_missing,能繁母猪存栏未提供绝对值:2021年7月末定点监测能繁母猪存栏变化
+2021-08,2021-08,https://www.moa.gov.cn/ztzl/szcpxx/jdsj/202108/,sow_inventory_missing,能繁母猪存栏未提供绝对值:2021年8月末定点监测能繁母猪存栏变化
+2025-11,2025-11,https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2025/202511/,sow_inventory_missing,能繁母猪存栏缺失
+2026-01,2026-01,https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2026/202601/,sow_inventory_missing,能繁母猪存栏缺失
+2026-02,2026-02,https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2026/202602/,sow_inventory_missing,能繁母猪存栏缺失

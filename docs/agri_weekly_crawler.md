@@ -57,29 +57,6 @@
 - 起始：`2022-08-02`
 - 截止：`2026-04-08`
 
-注意：
-
-- 用户目标是“2021 年起全部历史周报”，但当前这个栏目在已确认的 50 页分页范围内，最早仅发现到 `2022-08` 的目标周报。
-- 这意味着：
-  - 要么该系列在本栏目公开存档本身只保留到 2022-08
-  - 要么 2021-2022 更早周报不在这 50 页范围内，需另找归档入口或站内检索补抓
-
-这个边界已经体现在当前摘要里，不能把“未抓到 2021”误判成脚本失败。
-
-## 运行命令
-
-全量抓取：
-
-```powershell
-& 'C:\Users\31691\AppData\Local\Programs\Python\Python313\python.exe' scripts\agri_weekly_crawler.py --end-page 50
-```
-
-小样本验证：
-
-```powershell
-& 'C:\Users\31691\AppData\Local\Programs\Python\Python313\python.exe' scripts\agri_weekly_crawler.py --end-page 2 --max-target-articles 5
-```
-
 ## 后续建议
 
 ### 主方案
