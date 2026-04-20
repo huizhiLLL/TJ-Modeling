@@ -27,6 +27,7 @@ data/
     moa_hog_monthly_parsed/
     moa_xm_weekly_parsed/
     soozhu_henan_hog_daily_parsed/
+    scs_hog_inventory_parsed/
   metadata/
 scripts/
 docs/
@@ -218,6 +219,48 @@ docs/
 - 页面里稳定展示 `日均价格 / 去年同期 / 环比`，但 `同比` 标签多数存在而数值未展示，所以 `yoy_pct` 当前默认允许为空。
 - 当前仍有 `124` 篇文章缺少主值，主要集中在部分日期页面结构不完整或值未正常展示，需要按建模需要决定是否剔除或补抓。
 
+### 5. 市场与信息化司生猪存栏变化率补充源
+
+来源：
+
+- 市场与信息化司 `scs.moa.gov.cn/jcyj/` 历史文章
+
+时间覆盖：
+
+- `2018-02-13` 到 `2019-11-29`
+
+核心结果：
+
+- 种子文章：`18` 篇
+- 结构化记录：`20` 条
+- `hog_inventory_yoy_pct / breeding_sow_inventory_yoy_pct` 非空：`20`
+- `hog_inventory_mom_pct / breeding_sow_inventory_mom_pct` 非空：`19`
+
+建模入口：
+
+- `data/interim/scs_hog_inventory_parsed/scs_hog_inventory_changes.csv`
+
+主要字段：
+
+- `publish_date`
+- `report_period`
+- `report_year`
+- `report_month`
+- `period_type`
+- `sample_scope`
+- `hog_inventory_mom_pct`
+- `hog_inventory_yoy_pct`
+- `breeding_sow_inventory_mom_pct`
+- `breeding_sow_inventory_yoy_pct`
+- `validation_flag`
+- `validation_notes`
+
+注意：
+
+- 这个源补的是**变化率**，不是绝对存栏量。
+- 文章列表不公开，当前采用“搜索发现后固化种子 URL 列表”的方式接入。
+- `2018年1—3月份400个监测县生猪存栏信息` 这类季度页，已经在结构化结果里展开成逐月记录。
+
 ## 建模优先看的表
 
 如果只是先把可用主表拉进建模环境，小枝建议按这个顺序看：
@@ -230,6 +273,8 @@ docs/
    用于补充月度的能繁母猪存栏和全国生猪出场价格。
 4. `data/interim/soozhu_henan_hog_daily_parsed/soozhu_henan_hog_daily_prices.csv`
    用于河南省瘦肉型肉猪日度价格序列。
+5. `data/interim/scs_hog_inventory_parsed/scs_hog_inventory_changes.csv`
+   用于补充 `2018-2019` 年生猪存栏和能繁母猪存栏的环比、同比变化率。
 
 ## 使用前要注意的口径问题
 
@@ -241,3 +286,5 @@ docs/
   空值不一定是解析失败，可能是页面没有发布绝对量。
 - 搜猪网日度源的 `yoy_pct`
   当前页面多数不展示该值，空值是结构性缺失，不应直接当抓取失败处理。
+- `scs` 存栏源
+  提供的是变化率，不是绝对量，不能直接和“存栏量（万头）”当成同一变量使用。

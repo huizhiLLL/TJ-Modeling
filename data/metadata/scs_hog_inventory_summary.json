@@ -1,0 +1,27 @@
+{
+  "seed_article_count": 18,
+  "articles_processed": 20,
+  "failed_urls": [],
+  "time_coverage": {
+    "start": "2018-02-13",
+    "end": "2019-11-29"
+  },
+  "hog_inventory_mom_non_null_count": 19,
+  "hog_inventory_yoy_non_null_count": 20,
+  "breeding_sow_inventory_mom_non_null_count": 19,
+  "breeding_sow_inventory_yoy_non_null_count": 20,
+  "manual_review_rows": [
+    {
+      "article_url": "https://scs.moa.gov.cn/jcyj/201804/t20180418_6410380.htm",
+      "title": "2018年1—3月份400个监测县生猪存栏信息",
+      "publish_date": "2018-04-16",
+      "validation_flag": "missing_metrics",
+      "validation_notes": "missing:hog_inventory_mom_pct,breeding_sow_inventory_mom_pct"
+    }
+  ],
+  "run_started_at": "2026-04-20T15:15:49",
+  "run_finished_at": "2026-04-20T15:16:22",
+  "article_index_csv": "data/raw/scs_hog_inventory_articles/index_pages/article_index.csv",
+  "wide_csv": "data/interim/scs_hog_inventory_parsed/scs_hog_inventory_changes.csv",
+  "log_path": "data/logs/scs_hog_inventory_crawl_20260420_151549.log"
+}
