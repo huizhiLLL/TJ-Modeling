@@ -6,3 +6,5 @@ AGENTS.md
 raw/
 logs/
 *.pyc
+other/
+plans/

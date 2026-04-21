@@ -1,290 +1,37 @@
 # TJ-Modeling
 
-面向统计建模的数据准备仓库。
+面向统计建模的数据仓库
 
-## 怎么读
+优先看 `data/modeling/` 和 `data/metadata/`
 
-优先看两层：
+## Map
 
-- `data/interim/`
-  第一版结构化结果，通常是建模的直接入口。
-- `data/metadata/`
-  摘要、人工复核清单、覆盖范围说明，用来判断哪些表可以直接用，哪些还要补校验。
+- `data/modeling/henan_weekly_target_strict.csv`
+  河南周度目标严格版。只做周度聚合和标准化，尽量保留真实缺口。
+- `data/modeling/henan_weekly_features_strict.csv`
+  河南周度严格版特征表。包含目标变量、全国周度背景变量、月度映射变量和质量标记。
+- `data/modeling/henan_weekly_features_modeling.csv`
+  河南周度建模版特征表。包含有限补缺和常用派生特征，适合直接进入基线建模。
+- `data/metadata/henan_weekly_preprocess_data_dictionary.csv`
+  字段字典。
+- `data/metadata/henan_weekly_preprocess_quality_report.md`
+  预处理质量报告。
+- `data/metadata/figures/henan_weekly/`
+  已生成的基础可视化图表。
 
-说明：
+## 说明
 
-- `raw/` 和 `logs/` 出于体积考虑不默认推送，但本地会完整保留，保证可追溯。
-- 如果要核对原文、重做抽取、排查异常，需要回到本地 `data/raw/` 和 `data/logs/`。
+- 周度主价格默认使用“周内日均价中位数”作为目标值
+- `target_price_median` 是严格版主值，`target_price_model` 是建模版推荐主值
+- 建模版只对少量孤立缺口做了有限补值，补值痕迹保存在 `imputed_flag`、`imputation_method`、`imputation_scope`
+- 全国周度变量不是全样本完整覆盖，存在时间断层，缺失属于来源边界的一部分
+- 月度变量映射到周度时采用“日历月平铺”，这只是时间对齐，不代表真实周频变化
 
-## 推荐目录结构
+## 图表
 
-```text
-data/
-  raw/
-    <source_name>/
-  interim/
-    agri_weekly_parsed/
-    moa_hog_monthly_parsed/
-    moa_xm_weekly_parsed/
-    soozhu_henan_hog_daily_parsed/
-    scs_hog_inventory_parsed/
-  metadata/
-scripts/
-docs/
-```
+基础图表已经生成在 `data/metadata/figures/henan_weekly/`
 
-说明：
+如果要核对图表口径，先看：
 
-- `interim/`：结构化结果主表和长表
-- `metadata/`：摘要、复核清单、覆盖边界
-- `scripts/`：抓取脚本
-- `docs/`：来源级说明文档
-
-## 当前已接入的数据源
-
-### 1. 中国农业信息网周报
-
-来源：
-
-- 中国农业信息网监测预警栏目“畜产品和饲料集贸市场价格情况”
-
-时间覆盖：
-
-- `2022-08-02` 到 `2026-04-08`
-
-核心结果：
-
-- 列表页访问：`50` 页
-- 目标周报：`177` 篇
-- 去重后最终唯一周记录：`175` 条
-- `hog_price / corn_price / soymeal_price` 提取成功率：`100%`
-
-建模入口：
-
-- `data/interim/agri_weekly_parsed/agri_weekly_prices.csv`
-
-主要字段：
-
-- `publish_date`
-- `week_label`
-- `collect_date`
-- `hog_price`
-- `corn_price`
-- `soymeal_price`
-- `piglet_price`
-- `mixed_feed_price`
-- `validation_flag`
-- `validation_notes`
-
-注意：
-
-- 该来源当前最早只到 `2022-08`，这是公开归档边界，不是抓取失败。
-
-### 2. 农业农村部生猪专题月度数据页
-
-来源：
-
-- 农业农村部生猪专题月度数据页
-
-时间覆盖：
-
-- `2021Q1` 到 `2026-02`
-
-核心结果：
-
-- 页面总数：`60`
-- 成功处理：`60`
-- 指标长表：`1507` 行
-- `hog_exfarm_price` 非空率：`100%`
-- `breeding_sow_inventory` 非空率：`85%`
-
-建模入口：
-
-- `data/interim/moa_hog_monthly_parsed/moa_hog_core_metrics.csv`
-- `data/interim/moa_hog_monthly_parsed/moa_hog_indicators_long.csv`
-
-推荐使用方式：
-
-- 核心建模先看 `moa_hog_core_metrics.csv`
-- 需要扩展更多月度指标时再看 `moa_hog_indicators_long.csv`
-
-核心字段：
-
-- `period_key`
-- `report_period`
-- `publish_date`
-- `breeding_sow_inventory`
-- `hog_exfarm_price`
-- `hog_exfarm_price_mom`
-- `hog_exfarm_price_yoy`
-- `validation_flag`
-- `validation_notes`
-
-注意：
-
-- 页面本身没有稳定显式发布时间字段，当前 `publish_date` 是从 Excel 附件文件名推断出的代理发布日期。
-- `breeding_sow_inventory` 为空不一定表示解析失败，可能是该月只发布了“变化”而没给绝对值。
-
-### 3. 农业农村部公开栏目“监测预警/畜牧”历史周报
-
-来源：
-
-- 农业农村部公开栏目 `https://www.moa.gov.cn/gk/jcyj/xm/`
-
-时间覆盖：
-
-- `2011-01-14` 到 `2015-06-23`
-
-核心结果：
-
-- 列表页访问：`25` 页
-- 目标文章：`181` 篇
-- 成功处理：`181` 篇
-- `live_hog_price / corn_price / soymeal_price` 非空率均为 `100%`
-
-建模入口：
-
-- `data/interim/moa_xm_weekly_parsed/moa_xm_weekly_prices.csv`
-- `data/interim/moa_xm_weekly_parsed/moa_xm_weekly_indicators_long.csv`
-
-主要字段：
-
-- `publish_date`
-- `week_label`
-- `collect_date`
-- `live_hog_price`
-- `corn_price`
-- `soymeal_price`
-- `validation_flag`
-- `validation_notes`
-
-注意：
-
-- 这个旧源正文多数写的是 `活猪`，所以字段名保留为 `live_hog_price`。
-- 如果后续要和写成 `生猪` 的其他来源合并，建议在建模层做统一映射，不要直接在结构化层改名。
-
-### 4. 搜猪网河南省瘦肉型肉猪日度行情
-
-来源：
-
-- 搜猪网站内检索：关键词 `河南省瘦肉型肉猪(110kg左右)价格`
-
-时间覆盖：
-
-- `2014-12-17 10:30` 到 `2026-04-14 10:30`
-
-核心结果：
-
-- 搜索结果页：`124` 页
-- 搜索结果文章：`2478` 篇
-- 成功处理：`2478` 篇
-- 各地均价明细：`8012` 行
-- `avg_price / last_year_price / mom_pct` 非空：`2354`
-- `yoy_pct` 页面当前普遍未展示，默认留空
-
-建模入口：
-
-- `data/interim/soozhu_henan_hog_daily_parsed/soozhu_henan_hog_daily_prices.csv`
-- `data/interim/soozhu_henan_hog_daily_parsed/soozhu_henan_hog_local_prices.csv`
-
-推荐使用方式：
-
-- 做河南省日度均价主序列：先看 `soozhu_henan_hog_daily_prices.csv`
-- 要分析均价构成或做地区核查：再看 `soozhu_henan_hog_local_prices.csv`
-
-主表字段：
-
-- `publish_datetime`
-- `province`
-- `product_name`
-- `avg_price`
-- `last_year_price`
-- `mom_pct`
-- `yoy_pct`
-- `validation_flag`
-- `validation_notes`
-
-明细表字段：
-
-- `publish_datetime`
-- `province`
-- `city`
-- `county`
-- `price`
-- `unit`
-
-注意：
-
-- 搜索分页不是换 URL 页码，而是通过 `PageNo` 参数请求 JSON 结果。
-- 页面里稳定展示 `日均价格 / 去年同期 / 环比`，但 `同比` 标签多数存在而数值未展示，所以 `yoy_pct` 当前默认允许为空。
-- 当前仍有 `124` 篇文章缺少主值，主要集中在部分日期页面结构不完整或值未正常展示，需要按建模需要决定是否剔除或补抓。
-
-### 5. 市场与信息化司生猪存栏变化率补充源
-
-来源：
-
-- 市场与信息化司 `scs.moa.gov.cn/jcyj/` 历史文章
-
-时间覆盖：
-
-- `2018-02-13` 到 `2019-11-29`
-
-核心结果：
-
-- 种子文章：`18` 篇
-- 结构化记录：`20` 条
-- `hog_inventory_yoy_pct / breeding_sow_inventory_yoy_pct` 非空：`20`
-- `hog_inventory_mom_pct / breeding_sow_inventory_mom_pct` 非空：`19`
-
-建模入口：
-
-- `data/interim/scs_hog_inventory_parsed/scs_hog_inventory_changes.csv`
-
-主要字段：
-
-- `publish_date`
-- `report_period`
-- `report_year`
-- `report_month`
-- `period_type`
-- `sample_scope`
-- `hog_inventory_mom_pct`
-- `hog_inventory_yoy_pct`
-- `breeding_sow_inventory_mom_pct`
-- `breeding_sow_inventory_yoy_pct`
-- `validation_flag`
-- `validation_notes`
-
-注意：
-
-- 这个源补的是**变化率**，不是绝对存栏量。
-- 文章列表不公开，当前采用“搜索发现后固化种子 URL 列表”的方式接入。
-- `2018年1—3月份400个监测县生猪存栏信息` 这类季度页，已经在结构化结果里展开成逐月记录。
-
-## 建模优先看的表
-
-如果只是先把可用主表拉进建模环境，小枝建议按这个顺序看：
-
-1. `data/interim/agri_weekly_parsed/agri_weekly_prices.csv`
-   用于 `2022-08` 之后的官方周度价格。
-2. `data/interim/moa_xm_weekly_parsed/moa_xm_weekly_prices.csv`
-   用于补 `2011-2015` 的历史周度价格。
-3. `data/interim/moa_hog_monthly_parsed/moa_hog_core_metrics.csv`
-   用于补充月度的能繁母猪存栏和全国生猪出场价格。
-4. `data/interim/soozhu_henan_hog_daily_parsed/soozhu_henan_hog_daily_prices.csv`
-   用于河南省瘦肉型肉猪日度价格序列。
-5. `data/interim/scs_hog_inventory_parsed/scs_hog_inventory_changes.csv`
-   用于补充 `2018-2019` 年生猪存栏和能繁母猪存栏的环比、同比变化率。
-
-## 使用前要注意的口径问题
-
-- `hog_price` 和 `live_hog_price`
-  一个来源写“生猪”，一个来源写“活猪”，口径接近但不建议直接混名。
-- `publish_date`、`publish_datetime` 和 `collect_date`
-  不是同一概念。周报类数据通常优先用 `collect_date`，没有时再退回发布时间。
-- 月度源的 `breeding_sow_inventory`
-  空值不一定是解析失败，可能是页面没有发布绝对量。
-- 搜猪网日度源的 `yoy_pct`
-  当前页面多数不展示该值，空值是结构性缺失，不应直接当抓取失败处理。
-- `scs` 存栏源
-  提供的是变化率，不是绝对量，不能直接和“存栏量（万头）”当成同一变量使用。
+- `data/metadata/henan_weekly_visualization_checklist.md`
+- `data/metadata/henan_weekly_preprocess_quality_report.md`
