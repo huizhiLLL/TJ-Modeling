@@ -1,0 +1,17 @@
+{
+  "seed_article_count": 10,
+  "articles_processed": 10,
+  "failed_urls": [],
+  "time_coverage": {
+    "start": "2016-03-08",
+    "end": "2018-12-11"
+  },
+  "corn_price_non_null_count": 10,
+  "soymeal_price_non_null_count": 10,
+  "manual_review_rows": [],
+  "run_started_at": "2026-04-26T02:08:05",
+  "run_finished_at": "2026-04-26T02:08:12",
+  "article_index_csv": "data/raw/moa_feed_weekly_legacy_supplement/index_pages/article_index.csv",
+  "wide_csv": "data/interim/moa_feed_weekly_legacy_supplement_parsed/moa_feed_weekly_legacy_supplement_prices.csv",
+  "log_path": "data/logs/moa_feed_weekly_legacy_supplement_20260426_020805.log"
+}

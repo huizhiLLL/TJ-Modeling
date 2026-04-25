@@ -1,0 +1,16 @@
+{
+  "rows": 287,
+  "time_coverage": {
+    "start": "2011-01-14",
+    "end": "2022-09-20"
+  },
+  "segments": {
+    "moa_xm_weekly": 181,
+    "moa_feed_weekly_legacy_supplement": 10,
+    "scs_feed_weekly": 96
+  },
+  "corn_price_non_null_count": 283,
+  "soymeal_price_non_null_count": 287,
+  "generated_at": "2026-04-26T02:09:30",
+  "output_csv": "data/interim/moa_feed_weekly_chain_parsed/moa_feed_weekly_chain_prices.csv"
+}
