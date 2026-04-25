@@ -121,17 +121,3 @@
 - 原因：`1月` 的环比字段原文为 `—`
 
 这类缺失属于原文未提供，不是解析失败。
-
-## 运行命令
-
-全量抓取：
-
-```powershell
-& 'C:\Users\31691\AppData\Local\Programs\Python\Python313\python.exe' scripts\scs_hog_inventory_crawler.py
-```
-
-小样本验证：
-
-```powershell
-& 'C:\Users\31691\AppData\Local\Programs\Python\Python313\python.exe' scripts\scs_hog_inventory_crawler.py --max-articles 5
-```

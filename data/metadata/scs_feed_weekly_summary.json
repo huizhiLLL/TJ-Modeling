@@ -1,0 +1,46 @@
+{
+  "seed_article_count": 96,
+  "articles_processed": 96,
+  "failed_urls": [],
+  "time_coverage": {
+    "start": "2019-04-23",
+    "end": "2022-09-20"
+  },
+  "corn_price_non_null_count": 92,
+  "soymeal_price_non_null_count": 96,
+  "manual_review_rows": [
+    {
+      "article_url": "https://scs.moa.gov.cn/jcyj/202009/t20200930_6410948.htm",
+      "title": "9月份第4周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2020-09-29",
+      "validation_flag": "missing_core_fields",
+      "validation_notes": "missing:corn_price"
+    },
+    {
+      "article_url": "https://scs.moa.gov.cn/jcyj/202010/t20201014_6410950.htm",
+      "title": "10月份第1周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2020-10-13",
+      "validation_flag": "missing_core_fields",
+      "validation_notes": "missing:corn_price"
+    },
+    {
+      "article_url": "https://scs.moa.gov.cn/jcyj/202010/t20201021_6410952.htm",
+      "title": "10月份第2周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2020-10-20",
+      "validation_flag": "missing_core_fields",
+      "validation_notes": "missing:corn_price"
+    },
+    {
+      "article_url": "https://scs.moa.gov.cn/jcyj/202010/t20201028_6410956.htm",
+      "title": "10月份第3周畜产品和饲料集贸市场价格情况",
+      "publish_date": "2020-10-27",
+      "validation_flag": "missing_core_fields",
+      "validation_notes": "missing:corn_price"
+    }
+  ],
+  "run_started_at": "2026-04-26T01:33:43",
+  "run_finished_at": "2026-04-26T01:34:29",
+  "article_index_csv": "data/raw/scs_feed_weekly_articles/index_pages/article_index.csv",
+  "wide_csv": "data/interim/scs_feed_weekly_parsed/scs_feed_weekly_prices.csv",
+  "log_path": "data/logs/scs_feed_weekly_crawl_20260426_013343.log"
+}
