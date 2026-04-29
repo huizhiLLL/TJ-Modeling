@@ -276,22 +276,62 @@ def standardize_nat_weekly(project_root: Path) -> pd.DataFrame:
     )
     moa["week_start"] = get_week_start(moa["reference_date"])
 
-    keep_cols = [
+    hog_keep_cols = [
         "week_start",
         "reference_date",
         "nat_hog_price_weekly",
-        "nat_corn_price_weekly",
-        "nat_soymeal_price_weekly",
         "nat_piglet_price_weekly",
         "nat_feed_price_weekly",
         "nat_price_source",
         "nat_price_date_role",
     ]
-    nat = pd.concat([moa[keep_cols], agri[keep_cols]], ignore_index=True)
-    nat["source_priority"] = nat["nat_price_source"].map({"agri_weekly": 1, "moa_xm_weekly": 2}).fillna(9)
-    nat = nat.sort_values(["week_start", "source_priority", "reference_date"])
-    nat = nat.drop_duplicates("week_start", keep="first").drop(columns="source_priority")
-    nat = nat.rename(columns={"reference_date": "nat_price_reference_date"})
+    hog_nat = pd.concat([moa[hog_keep_cols], agri[hog_keep_cols]], ignore_index=True)
+    hog_nat["source_priority"] = hog_nat["nat_price_source"].map({"agri_weekly": 1, "moa_xm_weekly": 2}).fillna(9)
+    hog_nat = hog_nat.sort_values(["week_start", "source_priority", "reference_date"])
+    hog_nat = hog_nat.drop_duplicates("week_start", keep="first").drop(columns="source_priority")
+    hog_nat = hog_nat.rename(columns={"reference_date": "nat_price_reference_date"})
+
+    feed_chain = load_csv(
+        project_root,
+        "data/interim/moa_feed_weekly_chain_parsed/moa_feed_weekly_chain_prices.csv",
+        parse_dates=["publish_date", "collect_date"],
+    )
+    feed_chain = feed_chain.assign(
+        reference_date=feed_chain["collect_date"].fillna(feed_chain["publish_date"]),
+        nat_corn_price_weekly=feed_chain["corn_price"],
+        nat_soymeal_price_weekly=feed_chain["soymeal_price"],
+        nat_corn_soymeal_source=feed_chain["source_segment"].fillna("moa_feed_weekly_chain"),
+        nat_corn_soymeal_date_role=np.where(
+            feed_chain["collect_date"].notna(),
+            "collect_date",
+            "publish_date",
+        ),
+    )
+    feed_chain["week_start"] = get_week_start(feed_chain["reference_date"])
+
+    recent_feed = agri.assign(
+        nat_corn_soymeal_source="agri_weekly",
+        nat_corn_soymeal_date_role=np.where(
+            agri["collect_date"].notna(),
+            "collect_date",
+            "publish_date",
+        ),
+    )
+    feed_keep_cols = [
+        "week_start",
+        "reference_date",
+        "nat_corn_price_weekly",
+        "nat_soymeal_price_weekly",
+        "nat_corn_soymeal_source",
+        "nat_corn_soymeal_date_role",
+    ]
+    feed_nat = pd.concat([feed_chain[feed_keep_cols], recent_feed[feed_keep_cols]], ignore_index=True)
+    feed_nat["source_priority"] = feed_nat["nat_corn_soymeal_source"].map({"agri_weekly": 1}).fillna(2)
+    feed_nat = feed_nat.sort_values(["week_start", "source_priority", "reference_date"])
+    feed_nat = feed_nat.drop_duplicates("week_start", keep="first").drop(columns="source_priority")
+    feed_nat = feed_nat.rename(columns={"reference_date": "nat_corn_soymeal_reference_date"})
+
+    nat = hog_nat.merge(feed_nat, on="week_start", how="outer")
     return nat
 
 
@@ -382,7 +422,11 @@ def build_features_strict(project_root: Path, target_weekly: pd.DataFrame) -> pd
     features = features.merge(monthly_core, on="month_key", how="left")
     features = features.merge(monthly_scs, on="month_key", how="left")
 
-    features["nat_feature_available"] = features["nat_hog_price_weekly"].notna()
+    features["nat_feature_available"] = (
+        features["nat_hog_price_weekly"].notna()
+        | features["nat_corn_price_weekly"].notna()
+        | features["nat_soymeal_price_weekly"].notna()
+    )
     features["monthly_feature_available"] = (
         features["monthly_breeding_sow_inventory"].notna()
         | features["monthly_hog_exfarm_price"].notna()
@@ -504,6 +548,9 @@ def build_data_dictionary(
         "nat_price_source": "全国周度价格来源",
         "nat_price_date_role": "全国周度价格对齐时使用的日期字段",
         "nat_price_reference_date": "全国周度价格参考日期",
+        "nat_corn_soymeal_source": "全国周度玉米与豆粕价格来源",
+        "nat_corn_soymeal_date_role": "全国周度玉米与豆粕价格对齐时使用的日期字段",
+        "nat_corn_soymeal_reference_date": "全国周度玉米与豆粕价格参考日期",
         "monthly_breeding_sow_inventory": "月度能繁母猪存栏绝对量",
         "monthly_breeding_sow_inventory_mom": "月度能繁母猪存栏环比",
         "monthly_breeding_sow_inventory_yoy": "月度能繁母猪存栏同比",
